@@ -2,16 +2,11 @@ pipeline {
 
     agent any
 
-    tools {
-        maven 'Maven'
-        jdk 'JDK'
-    }
-
     stages {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-username/atm-simulator.git'
+                git 'https://github.com/ntdidcam-del/atm-simulator.git'
             }
         }
 
