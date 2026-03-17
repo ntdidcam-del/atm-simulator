@@ -1,15 +1,16 @@
 package com.atm.database;
 
-import java.sql.connection;
+import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class DBConnection{
+public class DBConnection {
+
     private static final String URL = "jdbc:mysql://localhost:3306/atm_db";
     private static final String USER = "root";
-    private static final String PASSWORD= "password";
+    private static final String PASSWORD = "password";
 
-    public static Connection getConnection() throws Exception{
+    public static Connection getConnection() throws Exception {
+
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }
-
 }
