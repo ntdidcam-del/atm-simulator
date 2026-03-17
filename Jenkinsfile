@@ -4,12 +4,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/ntdidcam-del/atm-simulator.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'mvn clean compile'
